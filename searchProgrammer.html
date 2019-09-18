@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Richmond Liang Project 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Codeteria</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="postProject.html">Post a Project
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchProgrammer.html">Search for Developers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="searchProject.html">Search for Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h1 class="mt-5">Search Developers</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+        </div>
+        <form action="searchProgrammer.php" method = "post">
+            <div class="form-group row">
+                <div class="col-lg-3">
+                    <label for="years">Minimum Years of Experience</label>
+                    <select class="form-control" id="years">
+                        <option value="0">Any</option>
+                        <option value="1">1 Year</option>
+                        <option value="3">3 Years</option>
+                        <option value="6">6 Years</option>
+                        <option value="9">9+ Years</option>
+                    </select>
+                </div>
+                <div class="col-lg-3">
+                    <label for="industryexperience">Industry Experience Type</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="industryexp[]" value="banking"> Banking</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="industryexp[]" value="social"> Social Media</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="industryexp[]" value="marketing"> Marketing</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="industryexp[]" value="research"> Research and Development</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="industryexp[]" value="information"> Information Security</label>
+                    </div>
+                </div>
+                <div class="col-lg-3 justify-content-center">
+                    <label for="language">Language Proficiency</label>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="proficiencies[]" value="html"> HTML/CSS</label>
+                    </div>  
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="proficiencies[]" value="c"> C/C++</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="proficiencies[]" value="python"> Python</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="proficiencies[]" value="java"> Java</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" name="proficiencies[]" value="javascript"> JavaScript</label>
+                    </div>
+                </div>
+                <div class="col-lg-3 justify-content-center">
+                    <img src="img/magnifyingglassjpg.jpg" class="img-fluid rounded mx-auto d-block" width = "250" height = "250">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer class="py-5 bg-dark mt-5">
+        <div class="container">
+            <p class="text-light">Template credits to <a class="text-info" href="https://startbootstrap.com/template-overviews/bare/">Start Bootstrap</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
